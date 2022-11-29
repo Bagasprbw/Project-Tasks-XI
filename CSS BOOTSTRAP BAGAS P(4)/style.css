@@ -1,0 +1,106 @@
+body {
+    background-color: #f3f4f5;
+}
+#about {
+    border-radius: 50%;
+}
+#about a {
+    text-decoration: none;
+}
+.lingkaran {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(34,195,104,1) 0%, rgba(36,188,199,1) 100%);
+    image-resolution: 5px;
+}
+.lingkaran i {
+    position: relative;
+    top: 30px;
+}
+#fb {
+    margin-right: 10px;
+    font-size: 24px;
+}
+#ig {
+    margin-right: 10px;
+    font-size: 24px;
+}
+#wa {
+    margin-right: 10px;
+    font-size: 24px;
+}
+.accordion-button {
+    background-color: #57c56f;
+}
+.bd-footer-links li {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.bd-footer-links {
+    overflow: hidden;
+    list-style: none;
+    list-style-type: none;
+    margin-left: 40px;
+}
+.bd-footer-links li a {
+    text-decoration: none;
+    margin-right: 5px;
+    text-align: center;
+}
+.text center {
+    text-align: center;
+}
+.btn {
+    background-color: #57c56f;
+}
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+main {
+    display: block;
+}
+.mymedsos a i {
+    transform: scale(0,5);
+}
+.textgerak {
+    display: flex;
+}
+.textgerak .text{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+}
+.textgerak .text.text1 {
+    color: #fff;
+}
+.text.text2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    animation: animate 4s steps(12) infinite;
+    border-left: 2px solid gray;
+}
+@keyframes animate {
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
