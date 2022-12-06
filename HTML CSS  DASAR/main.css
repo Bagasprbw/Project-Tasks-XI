@@ -1,0 +1,197 @@
+body{
+    background-color: rgb(198, 241, 217);
+    margin: 0;
+    padding: 0;
+}
+*{
+    text-decoration: none;
+}
+.navigasi{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #054c58;
+    color:rgb(255, 255, 255);
+    font-size: 35px;
+    overflow: hidden;
+    list-style: none;
+    height: 54px;
+    list-style-type: none;
+    width: 100%;
+}
+.navigasi li{
+    float: left;
+    margin-left: 5px;
+    padding: 0;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 2mm;
+    cursor: pointer;
+    margin-top: 18px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.navigasi li a{
+    color: white;
+}
+#gj{
+    margin-right: 500px;
+}
+.img{
+    border-radius: 50%;
+    width: 300px;
+}
+.nama{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 70%;
+}
+.txt{
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size: large;
+    color: black;
+    font-weight: bolder;
+}
+#tentang{
+    font-size: medium;
+    color: rgb(11, 11, 12);
+    padding: 2px;
+    font-weight: bold;
+    margin-left: 2mm;
+}
+.p1{
+    font-family: initial;
+    list-style: none;
+    font-size: large;
+    margin-left: 1mm;
+}
+.nvgsi2{
+    overflow: hidden;
+    list-style: none;
+}
+.nvgsi2 li{
+    float: left;
+    margin: 10px;    
+}
+.g1{
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 10px;
+}
+.g2{
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 10px;
+}
+.g3{
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 10px;
+}
+.g4{
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 10px;
+}
+.g5{
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 10px;
+}
+.g1:hover{
+    transform: scale(1.2);
+}
+.g2:hover{
+    transform: scale(1.2);
+}
+.g3:hover{
+    transform: scale(1.2);
+}
+.g4:hover{
+    transform: scale(1.2);
+}
+.g5:hover{
+    transform: scale(1.2);
+}
+.cpy{
+    font-size: small; 
+    float: center;
+    color: rgb(44, 43, 43);
+}
+#logo{
+    border-radius: 50%;
+}
+#logo2{
+    border-radius: 50%;
+}
+.o{
+    background-color: rgb(150, 230, 233);
+}
+.o:hover {
+    background-color: rgb(150, 230, 233);
+    border: solid 4px #0b0c0b;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+.navigasi li a:hover{
+    background-color: rgb(198, 241, 217);
+    text-decoration: none;
+    margin-top: 20px;
+    color: black;
+}
+td{
+    padding: 5px;
+}
+.nama1{
+    padding: 0;
+    margin: 5px;
+}
+.dd{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nama1{
+    font-family: sans-serif;
+    color: rgb(44, 43, 43);
+    margin-left: 3mm;
+}
+#galeri{
+    font-size: medium;
+    color: rgb(11, 11, 12);
+    padding: 2px;
+    font-weight: bold;
+    margin-left: 2mm;
+}
+.hobi{
+    font-size: medium;
+    color: rgb(11, 11, 12);
+    padding: 2px;
+    font-weight: bold;
+    margin-left: 2mm;
+    text-align: center;
+}
+#tentang {
+    text-align: center;
+}
+#galeri {
+    text-align: center;
+}
+.from {
+    margin-left: 20px;
+}
+
+
+
