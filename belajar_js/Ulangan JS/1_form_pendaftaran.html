@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir</title>
+</head>
+<body>
+    <h3>Formulir pendaftaran</h3><hr>
+    <label>nama</label>
+    <input type="text" placeholder="masukan nama" id="nama"><br><br>
+
+    <label>kelas</label>
+    <select id="kelas">
+        <option value="XIRA">XIRA</option>
+        <option value="XIRB">XIRB</option>
+        <option value="XIRB">XIRC</option>
+        <option value="XIRB">Lainnya</option>
+    </select><br><br>
+
+    <label>absen</label>
+    <input type="number" placeholder="absen" id="absen"><br><br>
+    <label>alamat</label>
+    <input type="text" placeholder="alamat" id="alamat"><br><br>
+    <button onclick="cek()">Cek</button><br><hr>
+    <h3 id="outputnama"></h3>
+    <h3 id="outputkelas"></h3>
+    <h3 id="outputabsen"></h3>
+    <h3 id="outputalamat"></h3>
+    
+
+    <script>
+        function cek() {
+            var nama = document.getElementById('nama').value;
+            var kelas = document.getElementById('kelas').value;
+            var absen = document.getElementById('absen').value;
+            var alamat = document.getElementById('alamat').value;
+            var outputnama = document.getElementById('outputnama');
+            var outputkelas = document.getElementById('outputkelas');
+            var outputabsen = document.getElementById('outputabsen');
+            var outputalamat = document.getElementById('outputalamat');
+            outputnama.innerHTML ="Nama = " + nama;
+            outputkelas.innerHTML ="Kelas =" + kelas;
+            outputabsen.innerHTML ="absen ="+ absen;
+            outputalamat.innerHTML ="Alamat ="+ alamat;
+        }
+    </script>
+
+</body>
+</html>

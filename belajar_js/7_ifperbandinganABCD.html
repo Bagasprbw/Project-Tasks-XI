@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="nilaiX" placeholder="masukan nilai ">
+    <button onclick="bandingakan()">Cek kelas No mu</button>
+    <script>
+    function bandingakan() {
+        var x = document.getElementById('nilaiX').value;
+        if (x>=91 && x<=100) {
+            alert("No mu di kelas A")
+        } else if (x>=81 && x<=90) {
+            alert("No mu di kelas B")
+        } else if (x>=71 && x<=80) {
+            alert("No mu di kelas c")
+        } else if (x>=61 && x<=70) {
+            alert("No mu di kelas D")
+        } else if (x>=0 && x<=60) {
+            alert("No mu di kelas E")
+        } else {
+            alert("404 NotFound")
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="edit.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container text-center">
+        <h1 class="fw-light">Menghitung Luas Bangun Datar</h1>
+        <i class="bi bi-plus-slash-minus" style="font-size: 70px;"></i>
+    </div>
+
+    <div class="container form-check form-switch">
+        <i class="bi bi-brightness-high-fill" style="font-size: 25px; margin-left: 5px;"></i>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" onclick="darkorlight()" style="height: 30px; width: 60px;">
+    </div>
+
+    <div class="container" style="border-radius: 15px; border: 2px solid lightgreen;">
+        <!--luas persegi-->
+        <i class="bi bi-arrow-right"><strong>Luas Persegi</strong></i>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Sisi</label>
+                <input type="number" id="s" class="form-control" placeholder="masukan panjang">
+            </div>
+        </form><br>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success" onclick="hitungpersegi()">Hitung</button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success"><span id="hasilpersegi">hasil :</span></button>
+            </div>
+        </div>
+        <hr>
+        <!--persegi panjang-->
+        
+        <i class="bi bi-arrow-right"><strong>Luas Persegi panjang</strong></i>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Panjang</label>
+                <input type="number" id="p" class="form-control" placeholder="masukan panjang">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Lebar</label>
+                <input type="number" id="l" class="form-control" placeholder="masukan lebar">
+            </div>
+        </form><br>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success" onclick="hitungsegipanjang ()">Hitung</button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success"><span id="hasilsegipanjang">hasil :</span></button>
+            </div>
+        </div>
+        <hr>
+        <!--luass segitiga-->
+        
+        <i class="bi bi-arrow-right"><strong>Luas Segitiga</strong></i>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Alas</label>
+                <input type="number" id="a" class="form-control" placeholder="masukan alas">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Tinggi</label>
+                <input type="number" id="t" class="form-control" placeholder="masukan tinggi">
+            </div>
+        </form><br>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success" onclick="hitungsegitiga ()">Hitung</button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success"><span id="hasilsegitiga">hasil :</span></button>
+            </div>
+        </div>
+        <hr>
+        <!--luas lingkaran-->
+        <i class="bi bi-arrow-right"><strong>Luas Lingkaran</strong></i>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Jari-jari</label>
+                <input type="number" id="r" class="form-control" placeholder="masukan jari jari">
+            </div>
+        </form><br>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success" onclick="hitunglingkaran ()">Hitung</button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success"><span id="hasillingkaran">hasil :</span></button>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div style="text-align: center; margin-top: 30px;">
+        copyright by &copy;Bagasawsm.id <strong>All right reserved.</strong>
+    </div>
+
+    <script>
+        function hitungpersegi() {
+            var sisi = document.getElementById('s').value;
+            var outputpersegi = document.getElementById('hasilpersegi');
+            var luas_persegi = sisi * sisi;
+            outputpersegi.innerHTML = "hasil : "+ luas_persegi;
+        }
+
+        function hitungsegipanjang() {
+            var panjang = document.getElementById('p').value;
+            var lebar = document.getElementById('l').value;
+            var outputpersegi_pjg = document.getElementById('hasilsegipanjang');
+            var luas_persegi_pjg = lebar * panjang;
+            outputpersegi_pjg.innerHTML = "hasil : "+ luas_persegi_pjg;
+        }
+
+        function hitungsegitiga() {
+            var alas = document.getElementById('a').value;
+            var tinggi = document.getElementById('t').value;
+            var outputsegitiga = document.getElementById('hasilsegitiga');
+            var luas_segitiga = 0.5 * alas * tinggi;
+            outputsegitiga.innerHTML = "hasil : "+ luas_segitiga;
+        }
+
+        function hitunglingkaran() {
+            var radius = document.getElementById('r').value;
+            var outputlingkaran = document.getElementById('hasillingkaran');
+            var luas_lingkaran = 22/7 * radius ** 2;
+            outputlingkaran.innerHTML = "hasil : "+ luas_lingkaran;
+        }
+        function darkorlight() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+        
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

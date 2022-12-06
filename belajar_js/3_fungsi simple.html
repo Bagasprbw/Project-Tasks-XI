@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi output JavaScript</title>
+</head>
+<body>
+    <button onclick="killme()">kill me</button>
+    <button onclick="lord()">lord</button>
+    <button onclick="jindan()">jindan</button>
+    <h1 id="output1"></h1>
+    <h1 id="output2"></h1>
+    <select id="nama" onchange="tampil()">
+        <option value="udin">samsudin</option>
+        <option value="jindan">Bang jindan</option>
+        <option value="coki">Coki</option>
+    </select>
+    <h2 id="output_select">Berkata :</h2>
+    <script>
+        var hasil1 = document.getElementById('output1');
+        var hasil2 = document.getElementById('output2');
+        var nama = document.getElementById('nama');
+        var output_select = document.getElementById('output_select');
+
+        function tampil() {
+            if (nama.value == 'udin') {
+                output_select.innerHTML = "hoooh tenan";
+            } else if (nama.value == 'jindan') {
+                output_select.innerHTML = "ente kdg2";
+            } else if (nama.value == 'coki') {
+                output_select.innerHTML = "Berkata : e tapi boong";
+            }
+        }
+        function killme() {
+            alert('gelot');
+        }
+        function lord() {
+            hasil1.innerHTML = "ngeteh boy"
+        }
+        function jindan() {
+            hasil2.innerHTML = "ente kadang kadang"
+        }
+    </script>
+</body>
+</html>

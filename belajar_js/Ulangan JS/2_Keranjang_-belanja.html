@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang belanja</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="edit.css">
+    <title>PesananMU</title>
+
+</head>
+<body style="font-family: 'Montserrat', sans-serif;">
+    <center>
+        <h3>Keranjang Belanja</h3>
+    </center><hr>
+    <div class="row g-3">
+        <div class="col-md-6">
+            <div class="container">
+                <i class="bi bi-arrow-right"><strong>Jeruk</strong></i>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Jumlah</label>
+                        <input type="number" id="jeruk" class="form-control">
+                    </div>
+                </form><br>
+
+                <i class="bi bi-arrow-right"><strong>Mangga</strong></i>
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="inputEmail4" class="form-label">jumlah</label>
+                        <input type="number" id="mangga" class="form-control">
+                    </div>
+                </form><br>
+
+                <i class="bi bi-arrow-right"><strong>Durian</strong></i>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">jumlah</label>
+                        <input type="number" id="durian" class="form-control">
+                    </div>
+                </form><br>
+
+                <i class="bi bi-arrow-right"><strong>Pepaya</strong></i>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">jumlah</label>
+                        <input type="number" id="pepaya" class="form-control">
+                    </div>
+                </form><br>
+
+                <i class="bi bi-arrow-right"><strong>kupon Diskon</strong></i>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Masukan diskon ("%")</label>
+                        <input type="number" id="diskon" class="form-control" placeholder="masukan diskon">
+                    </div>
+                </form><br>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <button type="button" class="btn btn-success" style="margin-top: 5px; margin-bottom: 5px;" onclick="cektotal()"><h3>Klik for info!!</h3></button><br>
+            <button type="button" class="btn btn-light" style="margin-bottom: 20px;"><h3 id="totalharga">TotalHarga :</h3></button><br>
+            <button type="button" class="btn btn-light" style="margin-bottom: 20px;"><h3 id="totaldiskon">Diskon :</h3></button><br>
+            <button type="button" class="btn btn-light" style="margin-bottom: 20px;"><h3>TotalBayar :</h3></button><br>
+            <h3 id="totalbayar"></h3> </i>
+        </div>
+    </div>
+
+
+    <script>
+        function cektotal() {
+            var mangga = document.getElementById('mangga').value;
+            var jeruk = document.getElementById('jeruk').value;
+            var durian = document.getElementById('durian').value;
+            var pepaya = document.getElementById('pepaya').value;
+            var diskon = document.getElementById('diskon').value;
+            var totalharga = document.getElementById('totalharga');
+            var hargasemua = (mangga*2000)+(jeruk*3000)+(durian*30000)+(pepaya*2000);
+            totalharga.innerHTML = "TotalHarga : Rp. "+ hargasemua;
+            var totaldiskon =  document.getElementById('totaldiskon');
+            totaldiskon.innerHTML = "Diskon : " + diskon + "%";
+            var totalbayar = document.getElementById('totalbayar');
+            var hargabayar = hargasemua - (hargasemua * diskon / 100);
+            totalbayar.innerHTML = "Rp." + hargabayar;  
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+</body>
+</html>

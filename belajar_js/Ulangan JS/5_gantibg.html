@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gantibg</title>
+
+    <style>
+        .mode-putih {
+            background-color: white;
+        }
+        .mode-hitam {
+            background-color: black;
+            color: white;
+        }
+        .mode-biru {
+            background-color: blue;
+        }
+        .mode-hijau {
+            background-color: green;
+        }
+        .mode-ungu {
+            background-color: purple;
+        }
+        .mode-gradient {
+        background: linear-gradient(to bottom, #ccffff 50%, #ffff 100%);
+        }
+    
+    </style>
+
+</head>
+<body>
+    <center>
+        <h3>ganti background ini</h3>
+        <select onchange="ganti()" id="varian">
+            <option value="putih">putih</option>
+            <option value="hitam">hitam</option>
+            <option value="biru">biru</option>
+            <option value="hijau">hijau</option>
+            <option value="ungu">ungu</option>
+            <option value="gradient">gradient</option>
+        </select>
+    </center><br>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio harum, enim eaque laudantium non deserunt voluptatum dolor quaerat quas quam soluta earum adipisci esse sed iusto, hic dolorum? Aspernatur obcaecati optio architecto quia, cum quo ipsa ad facere impedit, similique excepturi aperiam eveniet minima repudiandae voluptate, neque aliquam nostrum praesentium ut. Consequatur fuga rerum quo accusantium hic saepe veritatis adipisci quia nobis, excepturi sit minus culpa nemo incidunt laborum omnis.</p>
+
+    <script>
+        function ganti() {
+            var varian = document.getElementById('varian').value;
+            var body = document.body;
+            if (varian == 'putih') {
+                body.classList = "mode-putih";
+            } else if (varian == 'hitam') {
+                body.classList = "mode-hitam";
+            } else if(varian == 'biru') {
+                body.classList = "mode-biru";
+            } else if(varian == 'hijau') {
+                body.classList = "mode-hijau";
+            } else if(varian == 'ungu') {
+                body.classList = "mode-ungu";
+            } else if(varian == 'gradient') {
+                body.classList = "mode-gradient";
+            }
+        }
+    </script>
+</body>
+</html>

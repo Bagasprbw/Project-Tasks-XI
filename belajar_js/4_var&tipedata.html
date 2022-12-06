@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable & tipe data</title>
+</head>
+<body>
+    Nama : <div id="nama"></div>
+    <br>
+    Umur : <div id="umur"></div>
+    <br>
+    Status : <div id="status"></div>
+    <br>
+    Instagram : <a id="instagram"> Klik me</a>
+    <script>
+        // menampung variable
+        var id_Nama = document.getElementById('nama');
+        var id_Umur = document.getElementById('umur');
+        var id_Status = document.getElementById('status');
+        var id_Instagram = document.getElementById('instagram');
+        // membuat variable
+        var nama = "Bagas Prabowo";
+        var umur = 16;
+        var status = 'ra ndue yang';
+        var instagram = "https://instagram.com/bgsprbww_?igshid=YmMyMTA2M2Y=";
+        // mennampilkan output
+        id_Nama.innerHTML = nama;
+        id_Umur.innerHTML = umur + 'tahun';
+        id_Status.innerHTML = status;
+        id_Instagram.href = instagram;
+
+    </script>
+</body>
+</html>

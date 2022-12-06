@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="nilaiX" placeholder="masukan nilai x">
+    <input type="number" id="nilaiY" placeholder="masukan nilai y">
+    <button onclick="bandingakan()">Bandingkan nilai</button>
+    <script>
+    function bandingakan() {
+        var x = document.getElementById('nilaiX').value;
+        var y = document.getElementById('nilaiY').value;
+        if (x>y) {
+            alert('nilai '+ x + ' lebih besar dari ' + y)
+        } else {
+            alert('nilai '+ y + 'lebih besar dari ' + x)
+        }
+    }
+    </script>
+</body>
+</html>
